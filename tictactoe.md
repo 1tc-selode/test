@@ -111,7 +111,7 @@ private void WinnerCheck()
 ```
 
 11. 3 nagy esetben nyerhet valamelyik fél. Vagy oszloposan 3 féle képen, vagy vízszintesen 3 féle képen, vagy átlósan 2 féle képen. A C# úgy kezeli a két dimenziós tömböket, hogyha végig megyünk rajtuk egy for-al, akkor a "amoba.GetLength(0)" a "0" mindig a sorok számát veszi át (a mi esetünkben ez 3 most) és az "amoba.GetLength(1)" az "1" mindig az oszlopok számát veszi át (ez is 3 a mi esetünkben, de ha a mátrixnak különböző az értéke, akkor ez változik) 
-    1. *Oszloposan megyünk végig rajta*
+    1. *Oszloposan megyünk végig rajta:*
     For ciklussal végig megyünk a mátrixon, 0-ról kezdünk és addig megyünk, ahány sorból áll a mátrix, ezt tudjuk a amoba.GetLength(0)-val elérni. A for cikloson belül, megnézzük hogy ha egy adott oszlop, összes értéke 1, akkor X nyer, ha nem 1 akkor O nyer. Mivel oszlopokat nézünk, ezért a mátrix első értéke mindig ugyan azok lesznek, mert az jelöli a sorokat, és csak a második értéke lesz az *i*-edik elem, így tudjuk megnézni az összes oszlopot (Az első oszlop adatai a mi esetünkben **0,0; 1,0 és 2,0**). És ezeket meg nézzük hogy az értékük egyenlőek-e. És ha van egy nyertes, akkor egy break a for végén, hogy ne ellenőrizze tovább.
     ```C#
     for (int i = 0; i < amoba.GetLength(0); i++)
