@@ -75,7 +75,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 }
 ```
 
-9. Majd megnézzük a player1 változónkant amit kivűl létre hoztunk, hogy igaz e? Ha igaz, akkor az adott button-nak a Contentjét, tehát a szövegét beállítjuk X-re, a player1 érték false lesz (ezért legközelebb O-t rak le) és átadja a button kordinátáját az amőba mátrixnak, és a helyére egy 1-est írunk be, ez fogja az X-eket jelölni a mátrixban. Viszont legközelebb ha rámegyünk a gombra, akkor a player1 változónk már hamis, ezért a button szövege O lesz, és vissza állítjuk igazra a player1-et így mindig egyszer X-et egyszer, O-t rakunk le. És persze ennek is átadjuk a kordinátáját, és az O gombokat 02-vel jelöljük. És itt létrekell hozzunk egy WinnerCheck() függvényt, ahol minden kattintáskor ellenőrizzük hogy valaki nem e nyert e
+9. Majd megnézzük a player1 változónkant amit kivűl létre hoztunk, hogy igaz e? Ha igaz, akkor az adott button-nak a Contentjét, tehát a szövegét beállítjuk X-re, a player1 érték false lesz (ezért legközelebb O-t rak le) és átadja a button kordinátáját az amőba mátrixnak, és a helyére egy 1-est írunk be, ez fogja az X-eket jelölni a mátrixban. Viszont legközelebb ha rámegyünk a gombra, akkor a player1 változónk már hamis, ezért a button szövege O lesz, és vissza állítjuk igazra a player1-et így mindig egyszer X-et egyszer, O-t rakunk le. És persze ennek is átadjuk a kordinátáját, és az O gombokat 2-vel jelöljük. És itt létrekell hozzunk egy WinnerCheck() függvényt, ahol minden kattintáskor ellenőrizzük hogy valaki nem e nyert e
 
 ```C#
 private void Button_Click(object sender, RoutedEventArgs e)
