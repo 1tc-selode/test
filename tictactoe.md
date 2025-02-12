@@ -1,6 +1,6 @@
 # Grid: TicTacToe
 ## Feladat
-Solution neve: *Wpf_1_TicTacToe*
+Solution neve: **Wpf_1_TicTacToe**
 
 Projekt leírása: hozz létre egy 3x3-as Grid-et, aminek minden cellájába egy-egy (összesen 9db) felirat nélküli, strech-elt Button-t helyezz el
 
