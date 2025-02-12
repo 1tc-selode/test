@@ -123,7 +123,7 @@ private void WinnerCheck()
         }
     }
     ```
-    2. *Vízszintesen megyünk végig rajta*
+    2. *Vízszintesen megyünk végig rajta:*
     Ez ugyan úgy működik mint amikor az oszlopokat ellenőriztük, csak a amoba.GetLength(1) itt 1 lesz az érték mivel itt most egy sor a mi esetünkben 3 oszlop tartalma. És az amőba mátrik első értéke lesz így az *i*-edik érték, mert az fog változni mint oszlopok, és a második érték az vagy 0 vagy 1 vagy 2. És ezeket meg nézzük hogy az értékük egyenlőek-e. És ha van egy nyertes, akkor egy break a for végén, hogy ne ellenőrizze tovább.
     ```C#
     for (int i = 0;i < amoba.GetLength(1); i++)
@@ -135,7 +135,7 @@ private void WinnerCheck()
         }
     }
     ```
-    3. *Átlósan ellenőrizzük le*
+    3. *Átlósan ellenőrizzük le:*
     Itt két féle képen lehet alaki nyertes, ilyen X alakból az egyik átló. A középső, mátrixban 1,1-elem azon mindenféle képpen át fog menni, és megnézzük hogy megvan e az egyik átló "\" vagy a másik átló "/". És itt mivel az 1,1 az mind két esetben benne van, azt leellenőrizzük, hogyha 1 az értéke akkor X, ha nem 1 akkor O nyert.
     ```C#
     if ((amoba[0,0] != 0 && amoba[0,0] == amoba[1, 1] && amoba[1, 1] == amoba[2, 2]) ||
